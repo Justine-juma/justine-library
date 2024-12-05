@@ -1,49 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sw">
 <head>
-    <link rel="icon" href="M.png">    
-    <title>Justine Library</title>
-    <link rel="stylesheet" href="style.css">   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center; /* Katikati mlalo */
+            align-items: center;   /* Katikati wima */
+            height: 100vh; /* Urefu wa 100% ya skrini */
+            margin: 0; /* Ondoa margin yoyote */
+            background-image: url('images/backgroud2.jpg'); /* Badilisha na picha yako */
+            background-size: cover; /* Picha inafunika skrini nzima */
+            background-position: center; /* Picha inakaa katikati */
+            background-attachment: fixed; /* Picha haibadiliki hata ukiscroll */
+        }
+
+        .login-container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            background: rgba(245, 216, 90, 0.8); /* Rangi ya nyuma yenye uwazi kidogo */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Kivuli cha kontena */
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ee0b0b;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: rgb(255, 249, 249);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* CSS ya Loading Spinner */
+        .spinner {
+            border: 8px solid #927373;
+            border-top: 8px solid #007bff;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
 </head>
-
-</style>
-
 <body>
-
-    <div class="main">
-        <div class="navbar">
-            <div class="icon">
-                <h2 class="logo">Justine</h2>
-            </div>
-
-            <div class="menu">
-                <ul>
-                    <li><a href="HOME.html">HOME</a></li>
-                    <li><a href="ABOUT.html">ABOUT</a></li>
-                    <li><a href="SERVICE.html">SERVICE</a></li>
-                    <li><a href="DESIGN.html">DESIGN</a></li>
-                    <li><a href="CONTACT.html">CONTACT</a></li>
-                </ul>
-            </div>
-
-            <div class="search">
-                <input class="srch" type="search" name="" placeholder="Type To text">
-                <a href="#"> <button class="btn">Search</button></a>
-            </div>
-
-        </div>
-        <div class="content">
-            <h1>Web Librarys & <br><span>JAH60</span>MovieS</h1>
-            <p class="par">Karibu mpendwa katika website hii ambayo inajishughulisha <br>Na mambo ya kisasa zaizi ikiwamo Movie Season<br>
-                Series Music Cartoon n.k<br>Yote haya na mengineyo hupatikana humu 
-                Series Music Cartoon n.k<br>Yote haya yanapatikana humu 
-                <br>Wasiliana nasi +255 616066899</p>
-
-                <button class="cn"><a href="HOME.html">INGIA HAPA</a></button>
-
-                 
-        </div>
+    <div class="login-container">
+        <h2>Ingia</h2>
+        <form id="loginForm">
+            <input type="text" placeholder="Jina la Mtumiaji" required>
+            <input type="password" placeholder="Nenosiri" required>
+            <button type="button" onclick="showLoading()">Ingia</button>
+        </form>
     </div>
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-</body>    
+
+    <script>
+        function showLoading() {
+            document.body.innerHTML = `
+                <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;">
+                    <h3>Inapakia...</h3>
+                    <div class="spinner"></div>
+                </div>
+            `;
+
+            setTimeout(() => {
+                window.location.href = 'my2.html.html'; // Fungua ukurasa mwingine
+            }, 5000);
+        }
+    </script>
+</body>
 </html>

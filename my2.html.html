@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAH60 ALL MOVIE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('images/backgroud1.jpg'); /* Picha ya filamu1 kama background */
+            background-size: cover; /* Inafunika eneo lote la skrini */
+            background-repeat: no-repeat; /* Hairudii picha */
+            background-position: center; /* Picha inakaa katikati */
+            background-attachment: fixed; /* Picha inabaki imara hata ukiscroll */
+            color: white; /* Maandishi yatakuwa meupe ili yaonekane vizuri */
+        }
+
+        header {
+            background-color: rgba(231, 84, 128, 0.8); /* Pink ya giza yenye uwazi kidogo */
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.8); /* Rangi nyeupe yenye uwazi ili ibainike kwenye background */
+            border-radius: 8px;
+            margin: 2rem;
+            background-image: url('images/backgroud1.jpg');
+        }
+
+        .movie-card {
+            background-color: rgb(207, 13, 224);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .movie-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .movie-poster {
+            width: 100%;
+            aspect-ratio: 2 / 3;
+            overflow: hidden;
+        }
+
+        .movie-poster img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .movie-info {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .movie-info h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #fcfbfb;
+        }
+
+        .movie-info p {
+            color: #faf6f6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: rgba(231, 84, 128, 0.8);
+            color: rgb(43, 228, 83);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JAH60 ALL MOVIE</h1>
+    </header>
+
+    <div class="movie-grid">
+        <div class="movie-card">
+            <div class="movie-poster">
+                <a href="https://t.me/+LzqJBzLbHrg0NTBk" target="_blank">
+                    <img src="images/filamu1.jpg" alt="Kava la Filamu 1">
+                </a>
+            </div>
+            <div class="movie-info">
+                <h2>Blue Beetle</h2>
+                <p>Maelezo mafupi ya filamu.</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <a href="https://t.me/+LzqJBzLbHrg0NTBk" target="_blank">
+                    <img src="images/filamu2.jpg" alt="Kava la Filamu 2">
+                </a>
+            </div>
+            <div class="movie-info">
+                <h2>Nowhere</h2>
+                <p>Maelezo mafupi ya filamu.</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <a href="https://t.me/+LzqJBzLbHrg0NTBk" target="_blank">
+                    <img src="images/filamu (3).jpg" alt="Kava la Filamu 3">
+                </a>
+            </div>
+            <div class="movie-info">
+                <h2>The Black Book</h2>
+                <p>Maelezo mafupi ya filamu.</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <a href="https://t.me/+LzqJBzLbHrg0NTBk" target="_blank">
+                    <img src="images/filamu (4).jpg" alt="Kava la Filamu 3">
+                </a>
+            </div>
+            <div class="movie-info">
+                <h2>The Black Book</h2>
+                <p>Maelezo mafupi ya filamu.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <a href="https://t.me/+LzqJBzLbHrg0NTBk" target="_blank">
+                    <img src="images/filamu (5).jpg" alt="Kava la Filamu 3">
+                </a>
+            </div>
+            <div class="movie-info">
+                <h2>The Black Book</h2>
+                <p>Maelezo mafupi ya filamu.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <a href="https://t.me/+LzqJBzLbHrg0NTBk" target="_blank">
+                    <img src="images/filamu (6).jpg" alt="Kava la Filamu 3">
+                </a>
+            </div>
+            <div class="movie-info">
+                <h2>The Black Book</h2>
+                <p>Maelezo mafupi ya filamu.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <a href="https://t.me/+LzqJBzLbHrg0NTBk" target="_blank">
+                    <img src="images/filamu (7).jpg" alt="Kava la Filamu 3">
+                </a>
+            </div>
+            <div class="movie-info">
+                <h2>The Black Book</h2>
+                <p>Maelezo mafupi ya filamu.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <a href="https://t.me/+LzqJBzLbHrg0NTBk" target="_blank">
+                    <img src="images/filamu (8).jpg" alt="Kava la Filamu 3">
+                </a>
+            </div>
+            <div class="movie-info">
+                <h2>The Black Book</h2>
+                <p>Maelezo mafupi ya filamu.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <a href="https://t.me/+LzqJBzLbHrg0NTBk" target="_blank">
+                    <img src="images/filamu (9).jpg" alt="Kava la Filamu 3">
+                </a>
+            </div>
+            <div class="movie-info">
+                <h2>The Black Book</h2>
+                <p>Maelezo mafupi ya filamu.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <a href="https://t.me/+LzqJBzLbHrg0NTBk" target="_blank">
+                    <img src="images/filamu (10).jpg" alt="Kava la Filamu 3">
+                </a>
+            </div>
+            <div class="movie-info">
+                <h2>The Black Book</h2>
+                <p>Maelezo mafupi ya filamu.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <a href="https://t.me/+LzqJBzLbHrg0NTBk" target="_blank">
+                    <img src="images/filamu (11).jpg" alt="Kava la Filamu 3">
+                </a>
+            </div>
+            <div class="movie-info">
+                <h2>The Black Book</h2>
+                <p>Maelezo mafupi ya filamu.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <a href="https://t.me/+LzqJBzLbHrg0NTBk" target="_blank">
+                    <img src="images/filamu (12).jpg" alt="Kava la Filamu 3">
+                </a>
+            </div>
+            <div class="movie-info">
+                <h2>The Black Book</h2>
+                <p>Maelezo mafupi ya filamu.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <a href="https://t.me/+LzqJBzLbHrg0NTBk" target="_blank">
+                    <img src="images/filamu (13).jpg" alt="Kava la Filamu 3">
+                </a>
+            </div>
+            <div class="movie-info">
+                <h2>The Black Book</h2>
+                <p>Maelezo mafupi ya filamu.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <a href="https://t.me/+LzqJBzLbHrg0NTBk" target="_blank">
+                    <img src="images/filamu (14).jpg" alt="Kava la Filamu 3">
+                </a>
+            </div>
+            <div class="movie-info">
+                <h2>The Black Book</h2>
+                <p>Maelezo mafupi ya filamu.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <a href="https://t.me/+LzqJBzLbHrg0NTBk" target="_blank">
+                    <img src="images/filamu (15).jpg" alt="Kava la Filamu 3">
+                </a>
+            </div>
+            <div class="movie-info">
+                <h2>The Black Book</h2>
+                <p>Maelezo mafupi ya filamu.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <a href="https://t.me/+LzqJBzLbHrg0NTBk" target="_blank">
+                    <img src="images/filamu (16).jpg" alt="Kava la Filamu 3">
+                </a>
+            </div>
+            <div class="movie-info">
+                <h2>The Black Book</h2>
+                <p>Maelezo mafupi ya filamu.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <a href="https://t.me/+LzqJBzLbHrg0NTBk" target="_blank">
+                    <img src="images/filamu (17).jpg" alt="Kava la Filamu 3">
+                </a>
+            </div>
+            <div class="movie-info">
+                <h2>The Black Book</h2>
+                <p>Maelezo mafupi ya filamu.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <a href="https://t.me/+LzqJBzLbHrg0NTBk" target="_blank">
+                    <img src="images/filamu (18).jpg" alt="Kava la Filamu 3">
+                </a>
+            </div>
+            <div class="movie-info">
+                <h2>The Black Book</h2>
+                <p>Maelezo mafupi ya filamu.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <a href="https://t.me/+LzqJBzLbHrg0NTBk" target="_blank">
+                    <img src="images/filamu (19).jpg" alt="Kava la Filamu 3">
+                </a>
+            </div>
+            <div class="movie-info">
+                <h2>The Black Book</h2>
+                <p>Maelezo mafupi ya filamu.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <a href="https://t.me/+LzqJBzLbHrg0NTBk" target="_blank">
+                    <img src="images/filamu (20).jpg" alt="Kava la Filamu 3">
+                </a>
+            </div>
+            <div class="movie-info">
+                <h2>The Black Book</h2>
+                <p>Maelezo mafupi ya filamu.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <a href="https://t.me/+LzqJBzLbHrg0NTBk" target="_blank">
+                    <img src="images/filamu (21).jpg" alt="Kava la Filamu 3">
+                </a>
+            </div>
+            <div class="movie-info">
+                <h2>The Black Book</h2>
+                <p>Maelezo mafupi ya filamu.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <a href="https://t.me/+LzqJBzLbHrg0NTBk" target="_blank">
+                    <img src="images/filamu (22).jpg" alt="Kava la Filamu 3">
+                </a>
+            </div>
+            <div class="movie-info">
+                <h2>The Black Book</h2>
+                <p>Maelezo mafupi ya filamu.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <a href="https://t.me/+LzqJBzLbHrg0NTBk" target="_blank">
+                    <img src="images/filamu (23).jpg" alt="Kava la Filamu 3">
+                </a>
+            </div>
+            <div class="movie-info">
+                <h2>The Black Book</h2>
+                <p>Maelezo mafupi ya filamu.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <a href="https://t.me/+LzqJBzLbHrg0NTBk" target="_blank">
+                    <img src="images/filamu (24).jpg" alt="Kava la Filamu 3">
+                </a>
+            </div>
+            <div class="movie-info">
+                <h2>The Black Book</h2>
+                <p>Maelezo mafupi ya filamu.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <a href="https://t.me/+LzqJBzLbHrg0NTBk" target="_blank">
+                    <img src="images/filamu (25).jpg" alt="Kava la Filamu 3">
+                </a>
+            </div>
+            <div class="movie-info">
+                <h2>The Black Book</h2>
+                <p>Maelezo mafupi ya filamu.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <a href="https://t.me/+LzqJBzLbHrg0NTBk" target="_blank">
+                    <img src="images/filamu (26).jpg" alt="Kava la Filamu 3">
+                </a>
+            </div>
+            <div class="movie-info">
+                <h2>The Black Book</h2>
+                <p>Maelezo mafupi ya filamu.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <a href="https://t.me/+LzqJBzLbHrg0NTBk" target="_blank">
+                    <img src="images/filamu (27).jpg" alt="Kava la Filamu 3">
+                </a>
+            </div>
+            <div class="movie-info">
+                <h2>The Black Book</h2>
+                <p>Maelezo mafupi ya filamu.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <a href="https://t.me/+LzqJBzLbHrg0NTBk" target="_blank">
+                    <img src="images/filamu (28).jpg" alt="Kava la Filamu 3">
+                </a>
+            </div>
+            <div class="movie-info">
+                <h2>The Black Book</h2>
+                <p>Maelezo mafupi ya filamu.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <a href="https://t.me/+LzqJBzLbHrg0NTBk" target="_blank">
+                    <img src="images/filamu (29).jpg" alt="Kava la Filamu 3">
+                </a>
+            </div>
+            <div class="movie-info">
+                <h2>The Black Book</h2>
+                <p>Maelezo mafupi ya filamu.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <a href="https://t.me/+LzqJBzLbHrg0NTBk" target="_blank">
+                    <img src="images/filamu (30).jpg" alt="Kava la Filamu 3">
+                </a>
+            </div>
+            <div class="movie-info">
+                <h2>The Black Book</h2>
+                <p>Maelezo mafupi ya filamu.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <a href="https://t.me/+LzqJBzLbHrg0NTBk" target="_blank">
+                    <img src="images/filamu (31).jpg" alt="Kava la Filamu 3">
+                </a>
+            </div>
+            <div class="movie-info">
+                <h2>The Black Book</h2>
+                <p>Maelezo mafupi ya filamu.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <a href="https://t.me/+LzqJBzLbHrg0NTBk" target="_blank">
+                    <img src="images/filamu (32).jpg" alt="Kava la Filamu 3">
+                </a>
+            </div>
+            <div class="movie-info">
+                <h2>The Black Book</h2>
+                <p>Maelezo mafupi ya filamu.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Justine Juma. Haki zote zimehifadhiwa.</p>
+    </footer>
+</body>
+</html>
